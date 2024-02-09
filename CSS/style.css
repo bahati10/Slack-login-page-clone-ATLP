@@ -1,0 +1,254 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Poppins&family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* 
+body{
+    user-select: none;
+    min-width: 40%; 
+    max-height: 100vh;
+} */
+/* 
+body::-webkit-scrollbar {
+    display: none;
+} */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    min-width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    max-width: 1931px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-side {
+    flex: 1.5;
+    position: relative;
+    background-color: #FFE6C9;
+    max-height: 100%;
+    max-width: 1109px;
+    min-width: 700px;
+    max-height: 100%;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 811px;
+    min-width: 600px;
+    max-height: 100%;
+}
+
+.form{
+    max-width: 360px;
+    height: fit-content;
+    padding-top: 60px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+#slack-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.form .title{
+    color: #525252;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.form .sub-title{
+    color: #525252;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -22px;
+    margin-bottom: 35px;
+
+}
+
+.sign-with-google{
+    border: none;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-text{
+    color: #828282;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+#google-icon{
+    width: 16px;
+    height: 16px;
+}
+.sign-with-email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: #A1A1A1;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+    padding: 10px;
+}
+
+::placeholder{
+    color: #a1a1a1;
+}
+
+.bottom-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+.label{
+    color: #828282;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.forgot-password{
+    font-family: 'Poppins', sans-serif;
+    color: #7F265B;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#remember{
+    accent-color:  #7F265B;
+}
+
+.Login-button{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    background-color: #7F265B;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-text{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.last-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 170px;
+}
+
+.not-registered{
+    color: #828282;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.create-account{
+    color:#7F265B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+}
+
+.semi-circle{
+    position: absolute;
+    margin-top: 80%;
+    margin-left: 90%;
+}
+
+.left-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute; 
+    top: 0;
+    left: 0; 
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+
+    .right-side {
+        flex: 1;
+    }
+
+    .form {
+        width: 90%;
+    }
+}
